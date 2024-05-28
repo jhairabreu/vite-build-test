@@ -1,0 +1,11 @@
+maintenance:
+  - any: [".github/**"]
+
+documentation:
+  - "**/*.md"
+
+feature:
+  - head-branch: ["^feature", "feature"]
+
+bug:
+  - head-branch: ["^fix", "fix"]
