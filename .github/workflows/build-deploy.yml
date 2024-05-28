@@ -23,6 +23,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     env:
       APP_ID: lala
     steps:
@@ -42,7 +44,7 @@ jobs:
       - name: Build
         run: pnpm run build
       - name: fetch var
-        run: echo "my app id is ${{env.APP_ID}} and my env api_key is ${{secrets.MY_API_KEY}} "
+        run: echo "my app id is ${{env.APP_ID}} and my env api_key is ${{ secrets.MY_API_KEY }} "
   test:
     runs-on: ubuntu-latest
     needs: build
