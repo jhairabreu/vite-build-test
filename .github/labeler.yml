@@ -4,7 +4,7 @@ maintenance:
 
 documentation:
   - changed-files:
-  - any-glob-to-any-file: ["**/*.md"]
+      - any-glob-to-any-file: ["*.md"]
 
 feature:
   - head-branch: ["^feature", "feature"]
