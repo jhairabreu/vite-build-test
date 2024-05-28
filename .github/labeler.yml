@@ -1,5 +1,6 @@
 maintenance:
-  - any: [".github/**"]
+  - changed-files:
+      - any-glob-to-any-file: [".github/**"]
 
 documentation:
   - "**/*.md"
