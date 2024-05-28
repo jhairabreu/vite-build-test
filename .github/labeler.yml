@@ -2,9 +2,6 @@ maintenance:
   - changed-files:
       - any-glob-to-any-file: [".github/**"]
 
-documentation:
-  - "**/*.md"
-
 feature:
   - head-branch: ["^feature", "feature"]
 
